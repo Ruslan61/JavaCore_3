@@ -6,10 +6,10 @@ import java.util.List;
 
 public class MainClass {
     public static void main(String[] args) {
-        List<Integer> nums = new ArrayList<>(Arrays.asList(10,20,30));
+        List<Integer> nums = new ArrayList<>(Arrays.asList(10, 20, 30));
         Integer i = getFirstElement(nums);
 
-        List<String> stringList = new ArrayList<>(Arrays.asList("qwe","asd","zxc"));
+        List<String> stringList = new ArrayList<>(Arrays.asList("qwe", "asd", "zxc"));
         String s = getFirstElement(stringList);
     }
 
@@ -18,9 +18,9 @@ public class MainClass {
     }
 
     public static double sumOfList(List<? extends Number> numbers) {
-        double d= 0;
+        double d = 0;
         for (int i = 0; i < numbers.size(); i++) {
-            d+=numbers.get(i).doubleValue();
+            d += numbers.get(i).doubleValue();
         }
         return d;
     }

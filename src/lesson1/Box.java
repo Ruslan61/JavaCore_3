@@ -1,6 +1,6 @@
 package lesson1;
 
-public class Box implements Comparable<Box>{
+public class Box implements Comparable<Box> {
     private int size;
 
     public Box(int size) {
