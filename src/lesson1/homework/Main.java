@@ -13,6 +13,26 @@ public class Main<T> {
         // Задание 2
         ArrayList<String> stringArrayList = createArrayList(array.getObj());
         System.out.println(stringArrayList);
+
+        // Задание 3
+        Box<Apple> appleBox1 = new Box<>();
+        appleBox1.addFruit(new Apple());
+
+        Box<Apple> appleBox2 = new Box<>();
+        appleBox2.addFruit(new Apple());
+
+        Box<Orange> orangeBox1 = new Box<>();
+        orangeBox1.addFruit(new Orange());
+
+        System.out.println(appleBox1.getWeight());
+        System.out.println(appleBox2.getWeight());
+        appleBox1.shiftFruits(appleBox2);
+        System.out.println(appleBox1.getWeight());
+        System.out.println(appleBox2.getWeight());
+
+        System.out.println(orangeBox1.getWeight());
+        System.out.println(appleBox1.compare(orangeBox1));
+        System.out.println(orangeBox1.getWeight());
     }
 
     public T[] obj;
