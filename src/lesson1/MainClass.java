@@ -26,9 +26,9 @@ public class MainClass {
     }
 
     public static void boxWithNumbersGenEx() {
-        BoxWithNumbers<Float> floatBox1 = new BoxWithNumbers<>(1f, 2f, 3f);
-        BoxWithNumbers<Float> floatBox2 = new BoxWithNumbers<>(1f, 2f, 3f);
-        BoxWithNumbers<Integer> intBox = new BoxWithNumbers<>(1, 2, 3);
+        BoxWithNumbers<Float> floatBox1 = new BoxWithNumbers<>(1f, 2f, 3f, 4f);
+        BoxWithNumbers<Float> floatBox2 = new BoxWithNumbers<>(1f, 2f, 3f, 4f);
+        BoxWithNumbers<Integer> intBox = new BoxWithNumbers<>(1, 2, 3, 4);
 
         System.out.println("floatBox.avg() " + floatBox1.avg());
         System.out.println(floatBox1.sameAvg(floatBox2));
